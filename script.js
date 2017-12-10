@@ -32,6 +32,7 @@ function refreshSubreddits() {
 $('#add-subreddit').on('click', function (evt) {
     evt.preventDefault();
     var subreddit = $('#subreddit').val();
+    $('#subreddit').val("");
     add_new(subreddit);
     render();
 
